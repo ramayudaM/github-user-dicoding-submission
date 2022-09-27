@@ -13,10 +13,6 @@ import com.ramayuda.githubuser.databinding.ToolbarActivityDetailBinding
 
 class DetailActivity : AppCompatActivity(), View.OnClickListener {
 
-    companion object {
-        const val EXTRA_USER = "extra_user"
-    }
-
     private lateinit var binding: ActivityDetailBinding
     private lateinit var toolbar: ToolbarActivityDetailBinding
     private lateinit var user: User
@@ -92,4 +88,7 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    companion object {
+        const val EXTRA_USER = "extra_user"
+    }
 }
